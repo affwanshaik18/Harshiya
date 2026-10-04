@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Harshiya 💜</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family: "Segoe UI", system-ui, sans-serif;
+    background:linear-gradient(135deg,#12051f,#2b0b45 45%,#5b247a);
+    color:#fff; min-height:100vh; overflow-x:hidden;
+  }
+  .stars,.hearts{position:fixed;inset:0;pointer-events:none;z-index:0}
+  .star{position:absolute;width:3px;height:3px;background:#fff;border-radius:50%;opacity:.65;animation:twinkle 2.5s infinite}
+  @keyframes twinkle{50%{opacity:.15;transform:scale(.6)}}
+  .heart{position:absolute;font-size:18px;opacity:0;animation:float 7s linear infinite}
+  @keyframes float{0%{transform:translateY(105vh) rotate(0);opacity:0}15%{opacity:.55}100%{transform:translateY(-10vh) rotate(25deg);opacity:0}}
+  .page{position:relative;z-index:1}
+  section{min-height:100vh;padding:70px 22px;display:flex;align-items:center;justify-content:center}
+  .card{
+    width:min(900px,100%); padding:45px 28px; text-align:center;
+    background:rgba(255,255,255,.09); border:1px solid rgba(255,255,255,.2);
+    border-radius:30px; backdrop-filter:blur(14px);
+    box-shadow:0 25px 80px rgba(0,0,0,.35);
+  }
+  .small{letter-spacing:4px;text-transform:uppercase;font-size:.75rem;color:#e4c7ff}
+  h1{font-family:Georgia,serif;font-size:clamp(3rem,11vw,7rem);line-height:.95;margin:18px 0}
+  h2{font-family:Georgia,serif;font-size:clamp(2rem,7vw,4rem);margin-bottom:20px}
+  p{font-size:1.08rem;line-height:1.8;color:#f4eaff;max-width:700px;margin:0 auto}
+  .name{color:#e8c7ff;text-shadow:0 0 30px #a855f7}
+  .btn{
+    display:inline-block;margin-top:30px;padding:14px 25px;border-radius:999px;
+    background:linear-gradient(90deg,#9b5de5,#c77dff);color:white;text-decoration:none;
+    font-weight:700;box-shadow:0 10px 30px rgba(199,125,255,.3)
+  }
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px;margin-top:28px}
+  .item{padding:22px;border-radius:20px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12)}
+  .item b{display:block;color:#e9c9ff;margin-bottom:8px;font-size:1.05rem}
+  .quote{font-family:Georgia,serif;font-size:1.5rem;line-height:1.6;color:#fff;margin:25px auto;max-width:650px}
+  .signature{margin-top:30px;color:#e5c6ff;font-family:Georgia,serif;font-size:1.35rem}
+  .cake{font-size:4rem;animation:bounce 1.8s ease-in-out infinite}
+  @keyframes bounce{50%{transform:translateY(-10px)}}
+  .reveal{opacity:0;transform:translateY(30px);animation:reveal 1s forwards .3s}
+  @keyframes reveal{to{opacity:1;transform:none}}
+  .footer{padding:30px;text-align:center;color:#d7bce8;font-size:.85rem}
+  @media(max-width:600px){.grid{grid-template-columns:1fr}.card{padding:38px 20px}p{font-size:1rem}}
+</style>
+</head>
+<body>
+<div class="stars" id="stars"></div>
+<div class="hearts" id="hearts"></div>
+
+<div class="page">
+  <section>
+    <div class="card reveal">
+      <div class="small">A little something from Maddi</div>
+      <div class="cake">🎂</div>
+      <h1>Hey,<br><span class="name">Harshiya</span></h1>
+      <p>I didn't want to send you just another ordinary birthday wish...</p>
+      <a class="btn" href="#birthday">Open your surprise ✨</a>
+    </div>
+  </section>
+
+  <section id="birthday">
+    <div class="card">
+      <div class="small">Today is your day</div>
+      <h2>Happy Birthday,<br><span class="name">Harshiya Firdoes</span> 💜</h2>
+      <p class="quote">“Some people become special without even trying. You are one of those people.”</p>
+      <p>
+        I hope this new year of your life brings you peaceful days, genuine smiles,
+        beautiful memories, and all the little things that make life feel special.
+        You deserve happiness that stays, people who value you, and moments you'll
+        remember for a long time.
+      </p>
+      <a class="btn" href="#why">Keep going ↓</a>
+    </div>
+  </section>
+
+  <section id="why">
+    <div class="card">
+      <div class="small">A few words for you</div>
+      <h2>Why you're special</h2>
+      <div class="grid">
+        <div class="item"><b>Beautiful soul</b>You have a way of making ordinary moments feel a little brighter.</div>
+        <div class="item"><b>Lovely presence</b>Your presence matters more than you probably realise.</div>
+        <div class="item"><b>Stay genuine</b>Never lose the qualities that make you, you.</div>
+        <div class="item"><b>Keep smiling</b>Your smile deserves to show up in many, many more memories.</div>
+      </div>
+      <a class="btn" href="#message">One last thing 💜</a>
+    </div>
+  </section>
+
+  <section id="message">
+    <div class="card">
+      <div class="small">From Maddi</div>
+      <h2>A little reminder</h2>
+      <p>
+        Life will change, people will come and go, and new chapters will begin.
+        But I hope you always remember that you are genuinely appreciated.
+        Thank you for being a wonderful friend and for simply being yourself.
+      </p>
+      <p style="margin-top:22px">
+        May this birthday be the beginning of a year filled with more laughter,
+        more confidence, more beautiful moments, and fewer things to worry about.
+      </p>
+      <div class="signature">Happy Birthday, Harshiya. 💜<br>— Maddi</div>
+      <a class="btn" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Read it again ✨</a>
+    </div>
+  </section>
+
+  <div class="footer">Made with care, just for Harshiya 💜</div>
+</div>
+
+<script>
+  const stars=document.getElementById('stars');
+  for(let i=0;i<90;i++){
+    const s=document.createElement('span'); s.className='star';
+    s.style.left=Math.random()*100+'%'; s.style.top=Math.random()*100+'%';
+    s.style.animationDelay=(Math.random()*3)+'s'; stars.appendChild(s);
+  }
+  const hearts=document.getElementById('hearts');
+  const symbols=['💜','✦','♡','✧'];
+  for(let i=0;i<18;i++){
+    const h=document.createElement('span'); h.className='heart';
+    h.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+    h.style.left=Math.random()*100+'%'; h.style.animationDelay=(Math.random()*7)+'s';
+    h.style.animationDuration=(5+Math.random()*5)+'s'; hearts.appendChild(h);
+  }
+</script>
+</body>
+</html>
